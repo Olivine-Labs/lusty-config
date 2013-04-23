@@ -10,7 +10,7 @@ local function context(self, context)
 end
 
 --registers all subscribers specified in config
-function subscribers(self, subscribers)
+local function subscribers(self, subscribers)
   for serializedChannel, list in pairs(subscribers) do
     local channel = {}
     string.gsub(serializedChannel, "([^:]+)", function(c) channel[#channel+1] = c end)
