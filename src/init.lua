@@ -16,8 +16,15 @@ local function subscribers(self, subscribers)
     string.gsub(serializedChannel, "([^:]+)", function(c) channel[#channel+1] = c end)
     for subscriber, config in pairs(list) do
       if type(subscriber) == "number" then
-        subscriber = config
-        config = {}
+        if type(config) == "table" then
+          for key, value in pairs(config) do
+            subscriber = key
+            config = value
+          end
+        else
+          subscriber = config
+          config = {}
+        end
       end
       self:subscribe(channel, subscriber, config)
     end
