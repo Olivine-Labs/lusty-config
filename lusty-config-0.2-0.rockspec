@@ -1,7 +1,7 @@
 package = "lusty-config"
-version = "0.1-0"
+version = "0.2-0"
 source = {
-  url = "https://github.com/Olivine-Labs/lusty-config/v0.1.tar.gz",
+  url = "https://github.com/Olivine-Labs/lusty-config/v0.2.tar.gz",
   dir = "lusty-config"
 }
 description = {
@@ -13,7 +13,7 @@ description = {
   license = "MIT <http://opensource.org/licenses/MIT>"
 }
 dependencies = {
-  "lusty >= 0.1-0",
+  "lusty >= 0.2-0",
   "busted >= 1.7-1"
 }
 build = {
