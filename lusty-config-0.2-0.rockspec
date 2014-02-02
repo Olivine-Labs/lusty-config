@@ -1,8 +1,8 @@
 package = "lusty-config"
-version = "0.2-0"
+version = "0.3-0"
 source = {
-  url = "https://github.com/Olivine-Labs/lusty-config/archive/v0.2.tar.gz",
-  dir = "lusty-config-0.2"
+  url = "https://github.com/Olivine-Labs/lusty-config/archive/v0.3.tar.gz",
+  dir = "lusty-config-0.3"
 }
 description = {
   summary = "Configuration table plugin for lusty.",
