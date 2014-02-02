@@ -40,4 +40,5 @@ return function(lusty, config)
   subscribers(lusty, config.subscribers)
   publishers(lusty, config.publishers)
   context(lusty, config.context)
+  lusty.context.global = config.global
 end
