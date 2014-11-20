@@ -1,8 +1,8 @@
 package = "lusty-config"
-version = "0.3-0"
+version = "0.4-0"
 source = {
-  url = "https://github.com/Olivine-Labs/lusty-config/archive/v0.3.tar.gz",
-  dir = "lusty-config-0.3"
+  url = "https://github.com/Olivine-Labs/lusty-config/archive/v0.4.tar.gz",
+  dir = "lusty-config-0.4"
 }
 description = {
   summary = "Configuration table plugin for lusty.",
@@ -19,6 +19,6 @@ dependencies = {
 build = {
   type = "builtin",
   modules = {
-    ["lusty-config.init"]  = "src/init.lua"
+    ["lusty-config.init"]  = "lusty-config/init.lua"
   }
 }
